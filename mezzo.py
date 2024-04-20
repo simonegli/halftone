@@ -3,7 +3,7 @@ import random
 from PIL import Image, ImageDraw
 
 # Streamlit app title
-st.title('Halftone Pattern Generator with Spacing Gradient and Randomness')
+st.title('Halftone Gradient Generator')
 
 # Create columns for the UI and Image display
 col1, col2 = st.columns([1, 3])  # Adjusts for 20% UI, 80% output ratio
@@ -55,4 +55,4 @@ def generate_image(min_diam, max_diam, max_space, randomness_factor, width, heig
 # Display the image in the second column
 image = generate_image(min_diameter, max_diameter, max_spacing, randomness, width, height)
 with col2:
-    st.image(image, caption='Halftone Pattern with Spacing Gradient and Randomness', use_column_width=True)
+    st.image(image, caption='Halftone Gradient', use_column_width=True)
