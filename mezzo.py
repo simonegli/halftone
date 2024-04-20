@@ -10,10 +10,10 @@ col1, col2 = st.columns([1, 3])  # Adjusts for 20% UI, 80% output ratio
 
 # Slider parameters
 with col1:
-    min_diameter = st.slider('Min Dot Diameter', min_value=2, max_value=20, value=5, step=1)
-    max_diameter = st.slider('Max Dot Diameter', min_value=2, max_value=40, value=20, step=1)
-    max_spacing = st.slider('Max Spacing', min_value=5, max_value=100, value=10, step=5)
-    randomness = st.slider('Randomness Factor', min_value=0.0, max_value=1.0, value=0.5, step=0.1)
+    min_diameter = st.slider('Min Dot Diameter', min_value=2, max_value=20, value=4, step=1)
+    max_diameter = st.slider('Max Dot Diameter', min_value=2, max_value=40, value=16, step=1)
+    max_spacing = st.slider('Max Spacing', min_value=5, max_value=100, value=50, step=5)
+    randomness = st.slider('Randomness Factor', min_value=0.0, max_value=1.0, value=0.7, step=0.1)
 
 # Image dimensions
 width, height = 3800, 2800
